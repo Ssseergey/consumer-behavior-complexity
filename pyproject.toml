@@ -1,0 +1,33 @@
+[project]
+name = "science-complexity"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"},
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = "3.12.3"
+dependencies = [
+    "torch==2.11.0+cu130",
+    "scikit-learn==1.8.0",
+    "dahuffman==0.4.2",
+
+    "matplotlib",
+    "pandas",
+    "tqdm",
+    "ipykernel",
+    "ipywidgets",
+]
+
+[tool.poetry]
+package-mode = false
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu130"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
